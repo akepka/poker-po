@@ -1,0 +1,5 @@
+
+.anchor{
+    -fx-background-image: url("../../images/tlo.jpg");
+    -fx-background-repeat: stretch;   
+}
