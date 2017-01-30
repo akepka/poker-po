@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="700.0" styleClass="anchor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextArea fx:id="console" editable="false" layoutY="374.0" prefHeight="110.0" prefWidth="323.0" text="&#10;" />
+      <Button fx:id="btnNextHand" layoutX="350.0" layoutY="375.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="98.0" text="Next hand" />
+      <HBox layoutX="448.0" layoutY="375.0" prefHeight="88.0" prefWidth="240.0">
+         <children>
+            <Button fx:id="btnFold" disable="true" mnemonicParsing="false" prefHeight="88.0" prefWidth="80.0" text="Fold" />
+            <Button fx:id="btnCheckCall" disable="true" mnemonicParsing="false" prefHeight="88.0" prefWidth="80.0" text="Bet" />
+            <Button fx:id="btnBetRaise" disable="true" mnemonicParsing="false" prefHeight="88.0" prefWidth="80.0" text="Raise" />
+         </children>
+      </HBox>
+      <TextField fx:id="textFieldBetRaise" disable="true" layoutX="606.0" layoutY="339.0" prefHeight="25.0" prefWidth="80.0" text="0" />
+      <Text fx:id="potString" fill="WHITE" layoutX="279.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pot:  " wrappingWidth="40.00000278651714">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="computerNameText" fill="WHITE" layoutX="292.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer:" textAlignment="CENTER" wrappingWidth="79.99999523162842">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerNameText" fill="WHITE" layoutX="279.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Andrzej:" textAlignment="CENTER" wrappingWidth="67.00000041723251">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="computerChipsText" fill="WHITE" layoutX="368.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="79.99999523162842">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerChipsText" fill="WHITE" layoutX="344.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="67.00000041723251">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="playerBetText" fill="WHITE" layoutX="298.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="67.00000041723251">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="computerBetText" fill="WHITE" layoutX="298.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="67.00000041723251">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="potText" fill="WHITE" layoutX="322.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0" wrappingWidth="55.70703125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <HBox layoutX="224.0" layoutY="176.0" prefHeight="70.0" prefWidth="150.0">
+         <children>
+            <ImageView fx:id="flopImageView1" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="flopImageView2" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="flopImageView3" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <ImageView fx:id="turnImageView" fitHeight="70.0" fitWidth="50.0" layoutX="383.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="riverImageView" fitHeight="70.0" fitWidth="50.0" layoutX="442.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" />
+      <Slider fx:id="slider" disable="true" layoutX="548.0" layoutY="362.0" />
+      <HBox layoutX="293.0" layoutY="276.0" prefHeight="70.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="playerCardImageView1" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="playerCardImageView2" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox layoutX="293.0" prefHeight="70.0" prefWidth="100.0">
+         <children>
+            <ImageView fx:id="computerCardImageView1" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="computerCardImageView2" fitHeight="70.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
